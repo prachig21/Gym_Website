@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Variable/Custom Properties</title>
+    <style>
+        :root {
+            /* Declared your variable as global variable  */
+            /* --box-color: rgb(119, 119, 224); */
+            --primary-color: blue;
+            --danger-color: red;
+            --maxw: 333px;
+        }
+
+        .box {
+            /* --box-color is my variable name  */
+            /* the life or scope of this variable in this particular scope only(local variable) */
+            /* --box-color: rgb(119, 119, 224); */
+            width: 200px;
+            height: 200px;
+            background-color: var(--primary-color);
+            border: 2px solid var(--danger-color);
+            margin: 2px 9px;
+            box-shadow: 8px 3px var(--box-color);
+
+        }
+
+        .container {
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* --box-color: rgb(119, 119, 224); */
+            display: flex;
+            /* background-color:var(--box-color); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

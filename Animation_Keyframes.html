@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and Keyframes</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: tomato;
+
+        }
+
+        .box {
+            background-color: red;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: prachi;
+            animation-name: prachi1;
+            animation-duration: 5s;
+            animation-iteration-count: 3;
+            /* animation-fill-mode:alternate; */
+            /* animation-timing-function: ease-out; */
+            /* animation-delay: 3s; */
+            /* animation-direction: reverse; */
+
+            /* These properties can be set using this shorthand */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+            /* animation: prachi 5s ease-in 1s 12 backwards; */
+
+
+
+        }
+
+        @keyframes prachi1 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+
+
+        }
+
+        @keyframes prachi {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+
+</html>

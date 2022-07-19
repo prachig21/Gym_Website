@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selector</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@1&family=Dancing+Script&family=Gentium+Plus&family=Kdam+Thmor+Pro&family=Nuosu+SIL&family=Oswald:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background: url('https://source.unsplash.com/random/?city,night') no-repeat center center/cover;
+            /* opacity:0.3; */
+            margin: 0;
+            padding: 0;
+
+            /* background-color: black; */
+            color: white;
+
+        }
+
+        section {
+            height: 344px;
+            border: 2px solid red;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .navigation {
+            font-family: 'Ubuntu', sans-serif;
+
+            text-align: center;
+            display: flex;
+            /* display:inline-block;
+            width: 100%;
+            margin:auto; */
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+            /* margin-left: 100px; */
+
+
+        }
+
+        /* section::before{
+            content:"This is content before section"
+
+        } */
+
+        /* section::after{
+            content:"This is content after section"
+        } */
+
+        h1 {
+
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Coding world</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium, quae soluta iste, numquam iure
+            impedit minima excepturi corrupti ullam cumque sapiente velit molestiae suscipit. Maxime itaque, nulla
+            rerum ut minima accusamus. Culpa, vero iusto!</p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .container {
+            font-size: 25px;
+
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: 	 	#F0F0F0;
+            color:black;
+
+
+        }
+
+        h2 {
+
+            font-size: 20;
+            font-weight: bold;
+
+        }
+
+        legend {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <h2>
+        <p align="center">Gym Registration form </p>
+    </h2>
+    <hr>
+    <form action="backend.php" class="container">
+        <fieldset>
+            <legend>Personal details</legend>
+            <div>
+                Name: <input type="text" name="myname" id="name">
+            </div>
+            <br>
+            <div>
+                Current Weight: <input type="number" name="myweight" id="cw">
+
+                Age: <input type="number" name="myage" id="age">
+            </div>
+            <br>
+            <div>
+                Height:<input type="number" name="myheight" id="height">
+
+
+                BMI:<input type="number" name="mybmi" id="bmi">
+            </div>
+            <br>
+            <div>
+                Goal Weight:<input type="number" name="mygw" id="gw">
+            </div>
+            <br>
+            <div>
+                <div>
+                    Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> other
+                    <input type="radio" name="myGender">
+                </div>
+                <br>
+                Address:
+                <textarea rows="3" cols="32" name="mygw" id="gw"> </textarea>
+            </div>
+            <br>
+
+
+            <div>
+                Email: <input type="email" name="myEmail">
+            </div>
+            <br>
+            <div>
+                Date: <input type="date" name="mydate">
+            </div>
+            <br>
+
+            <div>
+                Contact Number: <input type="number" name="text" name="mynum">
+            </div>
+            <br>
+
+            <div>
+                Tell why you deserve to be in the Grace Transformation Challenge:
+                <textarea rows="3" cols="32" name="mygw" id="gw"> </textarea>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox">
+                I have Read Understand and Agree to the Grace Transformation Challenge Rules and Regulations
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="submit Now"><br><br>
+                <input type="reset" value="Reset Now ">
+            </div>
+        </fieldset>
+
+</body>
+
+</html>

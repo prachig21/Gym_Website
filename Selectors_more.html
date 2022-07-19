@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+
+        }
+
+        /* if p is right inside div then  css will be applied */
+        /* div p {
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+
+        /* if p is contained  by any li which is contained by div*/
+        /* div li p {
+            color: yellow;
+            background-color:cyan;
+            font-weight: bold;
+        } */
+
+        p {
+            color: red;
+            background-color: yellow;
+        }
+
+        /* >(greater than sign is used to apply  the properties where the  div is a parent of p only directly ) */
+        /* div is direct parent of p */
+        /* div > p {
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+
+
+        /* div is sibling of p */
+        /* if p is  right after div */
+        /* div + p{
+            color:white;
+            background-color:rgb(219, 131, 131);
+        } */
+
+
+    </style>
+</head>
+
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is another paragraph inside li</p>
+                    <li>This will not effected</li>
+                </li>
+            </ul>
+            <p>THis is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+
+</html>

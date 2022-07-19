@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> height,width,borders andbackground</title>
+    <style>
+        #firstpara{
+            background-color: red;
+            height:100px;
+            width:500px;
+            border:3px solid green;
+            /* border-width: 3px;
+            border-color:green ;
+            border-style: solid; */
+            border-radius:11px;
+        }
+        #secondpara{
+            background-color: yellow;
+            height:100px;
+            width:500px;
+            border-top:3px solid blue;
+            border-right:3px solid green;
+            border-left:3px solid yellow;
+            border-bottom:3px solid pink;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        #thirdpara{
+            font-size: 50px;
+            height:600px;
+            width:500px;
+            background-image: url('https://www.hiswingz.com/wp-content/uploads/2016/07/happy.jpg');
+            border:3px solid red;
+            background-repeat: no-repeat; /*repeat-x and repeat-y will make it repeat on x and y */
+
+            /* there are many combination in css to position your image */
+            /* background-position: center center; */
+            /* background-position:center bottom;
+            background-position:center top;
+            background-position:top center;
+            background-position:bottom bottom; */
+        }
+    </style>
+</head>
+<body>
+        <h3>This is heading</h3>
+        <p id="firstpara">This is a paragraph</p>
+
+        <h3>This is second paragraph</h3>
+        <p id="secondpara">This is a second paragraph</p>
+
+        <h3>This is third paragraph</h3>
+        <p id="thirdpara">Be happy because if yo sad no one cares about you</p>
+</body>
+</html>

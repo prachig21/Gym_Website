@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            margin: 23px 12px;
+            background-color: rgb(233, 170, 233);
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: offset-x offset-y  blur-radius color; */
+            /* box-shadow: offset-x offset-y  blur-radius  spread-radius color; */
+
+
+
+            /* It will give shadow to box */
+            box-shadow: 10px 13px rgb(245, 13, 245);
+
+            /* It will give shadow to box in a top part */
+            box-shadow: -10px -10px rgb(245, 13, 245);
+
+            /* blur radius */
+            box-shadow: -10px -10px 10px purple;
+
+            /* spread radius */
+            box-shadow: -10px -10px 10px 10px purple;
+
+            /* rgba(reb,green,blue,alpha)  */
+            /* alpha-used to darkness of color */
+            box-shadow: -7px -10px 10px rgba(12, 234, 216, 0.5);
+
+            /* Give shadow inside the box */
+            box-shadow: inset 3px 5px rgba(12, 234, 216, 0.5);
+
+            /* for multiple box shadow */
+            box-shadow: 4px 8px green, 4px 8px red;
+        }
+
+        .card h2 {
+            /* giving shadow to your text */
+            text-shadow: 3px 4px white;
+
+            /* giving shadow to your text + blur effect */
+            text-shadow: 3px 4px 4px white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>The C++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim minima asperiores vel. Dicta labore
+                reprehenderit neque necessitatibus? Cum itaque cupiditate adipisci qui illo, delectus eum consequuntur
+                dignissimos unde eos, iure beatae totam hic labore.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is HTML Course</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae dignissimos neque nostrum quia
+                molestiae ea optio non laudantium. Voluptatem quidem iste aperiam, veniam blanditiis nihil autem, quas,
+                id fugiat quo nostrum perferendis quaerat fuga.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Ml learning</h2>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis labore delectus officia magni iure quaerat
+            facilis! Ut adipisci nihil aspernatur soluta dolores eveniet delectus vel fugit, consectetur magnam
+            eligendi, natus eius inventore quasi autem.
+        </div>
+
+</body>
+
+</html>
